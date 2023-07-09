@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8" />
+        <title>5.layout실습</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #container{
+                width: 860px;
+                height: auto;
+                background: #aaa;
+                padding: 10px;
+                box-sizing: border-box;
+                margin: 0 auto;
+
+            }
+            header{
+                height: 120px;
+                width: 100%;
+                background: #ccc;
+                
+            }
+
+            header > nav{
+                width: 820px;
+                height: 40px;
+                margin-top: 60px;
+                background: #eee;
+            }
+
+            main{
+                width :100%;
+                height: auto;
+                padding: 10px;
+                margin: 10px 0;
+                background: #ccc;
+                box-sizing: border-box;
+                overflow: hidden;
+
+            }
+            main > section{
+                width: 400px;
+                height: 400px;
+                background: #eee;
+                float: left;
+       
+
+            }
+            main > aside{
+                height: 400px;
+                width: 200px;
+                background: #eee;
+                float: right;
+                margin-left: 10px;
+
+            }
+            footer{
+                height: 100px;
+                width: 100%;
+                background: #ccc;
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h3>header</h3>
+                <nav>
+                    <h3>nav</h3>
+                </nav>
+            </header>
+
+            <main>
+                <h3>main</h3>
+                <aside>
+                    <h3>aside1</h3>
+                </aside>
+                <section>
+                    <h3>section</h3>
+                </section>
+                <aside>
+                    <h3>aside2</h3>
+                </aside>
+            </main>
+
+            <footer>
+                <h3>footer</h3>
+            </footer>
+
+
+
+
+
+        </div>
+    </body>
+
+
+
+</html>
