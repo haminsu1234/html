@@ -21,7 +21,7 @@
             header{
                 width: 100%;
                 height: auto;
-                border: 1px solid blue;
+           
                 box-sizing: border-box;
             }
 
@@ -35,7 +35,10 @@
                 background: #f3f3f3;
             }
             header> div:nth-child(2){height: 110px;}
-            header> div:nth-child(3){height: 46px;}
+            header> div:nth-child(3){
+                height: 46px;
+                background: #564f47;
+            }
 
             header> div> div{
                 width: 1126px;
@@ -109,6 +112,44 @@
 
             }
 
+            header .highmid > a{
+                margin-top: 20px;
+            }
+
+            header .highmid > a:nth-child(1){
+                float: left;
+            }
+            
+            header .highmid > a:nth-child(2){
+                float: right;
+            }
+            
+            header .lnb >ul{
+                width: 100%;
+                height: 100%;
+            }
+            header .lnb >ul > li{
+                float: left;
+                width: 16.6%;
+                height: 100%;
+                
+                box-sizing: border-box;
+                
+            } 
+
+            header .lnb > ul > li > a{
+                width: 100%;
+                height: 100%;
+                display: block;
+                font-size: 15px;
+                color: #b0a171;
+                background-color: #464545;
+                font-weight: bold;
+                font-family: arial;
+                text-align: center;
+                line-height: 46px;
+            }
+
 
             main{
                 width :100%;
@@ -127,7 +168,6 @@
 
 
             main > section > article{
-                border: 1px solid orange;
                 box-sizing: border-box;
                 width: 1126px;
                 height: 100%;
@@ -139,20 +179,83 @@
                 height: 480px;
             }
 
-            main > .sc2 > article{
-                height: 480px;
+            main > .sc1 >article{
+                position: relative;
             }
 
+            main .sc1>article>img{
+                position: absolute;
+            }
+
+            main .sc1>article>img:nth-child(1){
+                top : 40px;
+                left: 10px;
+            }
+            main .sc1>article>img:nth-child(2){
+                right :260px;
+                top: 40px;
+            }
+            main .sc1>article>img:nth-child(3){
+                right: 10px;
+                bottom: 100px;
+            }
+
+            main > .sc2 > article{
+                height: 480px;
+                border: 1px solid gray;
+            }
+
+            main .sc2 > h3{
+                text-align: center;
+                font-size: 27px;
+                color: #564f47;
+                margin-bottom: 40px;
+
+            }
+
+            main .sc2 > h3 > strong{
+                font-size: 27px;
+                font-weight: bold;
+                color: #699270;
+            }
+            
             main > .sc2> article >div{
                 width: 345px;
                 border: 1px solid pink;
                 box-sizing: border-box;
                 float: left;
+                position: relative;
+            }
+
+            main .sc2 > article >div .txt1{
+                left: 40px;
+                font-size: 27px;
+                color: #564f47;
+                top: 60px;
+            }
+
+            main .sc2 > article>div .txt2{
+                left: 40px;
+                top: 116px;
+                font-size: 26px;
+                color: white;
+                padding: 4px 6px;
+                background-image: url("./img/bg_transparent.png");
+            }
+            
+
+            main .sc2 > .grape> .txt2>strong{
+                font-size: 32px;
+                opacity: 1;
+                color: #c3d069;
+                font-weight: bold;
             }
 
             main > .sc2 > article >div:nth-child(1){
                 width: 434px;
                 height: 100%;
+                background-image: url("./image/main_new_img1.jpg");
+                
             }
             main > .sc2 > article > div:nth-child(2){height: 50%;}
             main > .sc2 > article > div:nth-child(3){height: 50%;}
@@ -265,20 +368,48 @@
                         </p>
                     </div>
                 </div>
-                <div>
-                    <section></section>
+                <div class="high">
+                    <section class="highmid">
+                        <a href="#">
+                            <img src="./image/header_logo.png" alt="로고">
+                        </a>
+                        <a href="#">
+                            <img src="./image/header_banner.png" alt="로고">
+                        </a>                  
+                    </section>
                 </div>
                 <div>
-                    <nav></nav>
+                    <nav class="lnb">
+                        <ul>
+                            <li><a href="#">친환경장터 소개</a></li>
+                            <li><a href="#">과일</a></li>
+                            <li><a href="#">채소</a></li>
+                            <li><a href="#">쌀 잡곡</a></li>
+                            <li><a href="#">반찬</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
             <main>
                 <section class="sc1">
-                    <article></article>
+                    <article>
+                        <img src="./image/main_banner_img.jpg" alt="채소사진">
+                        <img src="./image/main_banner_tit.jpg" alt="타이틀">
+                        <img src="./image/main_banner_txt.png" alt="소개글">
+                    </article>
                 </section>
                 <section class="sc2">
+                    <h3>장터 <strong>새상품</strong></h3>
                     <article>
-                        <div>1</div>
+                        <div class="grape">
+                            <img src="./image/main_new_badge.png" alt="좌상단">
+                            <span class="txt1">우리농가에서 자란</span>
+                            <span class="txt2">
+                                껍질째 먹는
+                                <strong>포도</strong>
+                            </span>
+                        </div>
                         <div>2</div>
                         <div>3</div>
                         <div>4</div>
