@@ -379,6 +379,17 @@ main > .info {
 #sub > .introduction > aside > .lnb> li:nth-child(2).on > a{
     background-image: url('../images/sub_cate1_lnb2_ov.png');
 }
+
+#sub > .introduction > .content > p{
+    margin-top: 10px;
+    line-height: 20px;
+     color: #666;
+ }
+ #sub > .introduction > .content > p > strong{
+     font-weight: bold;
+     color: #91ba15;
+ }
+
 /*장보기*/
 #sub > .market > aside > .lnb> li:nth-child(1) > a{
     background-image: url('../images/sub_cate2_lnb1.png');
