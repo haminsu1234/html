@@ -388,7 +388,20 @@ main > .info {
  #sub > .introduction > .content > p > strong{
      font-weight: bold;
      color: #91ba15;
+ }        
+ #sub > .introduction > .content > p{
+    margin-top: 10px;
+    line-height: 20px;
+     color: #666;
  }
+ #sub > .introduction > .content > p > strong{
+     font-weight: bold;
+     color: #91ba15;
+ }
+
+
+ 
+
 
 /*장보기*/
 #sub > .market > aside > .lnb> li:nth-child(1) > a{
